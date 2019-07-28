@@ -23,7 +23,7 @@ def find_first_non_repeated_character(s):
             # Second loop: m=1, e=1
             # Third loop: m=1, e=2
             # !!! So we should substract 2
-            
+
             first_non_repeated = s[i - 2]
 
             print("First non repeated character is: ", first_non_repeated)
