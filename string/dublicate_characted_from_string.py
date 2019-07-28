@@ -3,8 +3,6 @@ To start with, we have a simple String related coding question frequently asked 
 
 For example, if String is "Java" then the program should print "a". Bonus points if your program is robust and handles different kinds of input e.g. String without duplicate, null or empty String etc. Bonus points if you also write unit tests for normal and edge cases.
 
-
-Read more: https://javarevisited.blogspot.com/2015/01/top-20-string-coding-interview-question-programming-interview.html#ixzz5uzGDUx00
 """
 
 """
