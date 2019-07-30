@@ -17,3 +17,20 @@ def reverse_string(s):
     print(new_str)
 
 reverse_string(str)
+
+
+# solution 2: recursion
+
+def reverse(str):
+    if str == "":
+        return str
+    else:
+        return str[-1] + reverse(str[:-1])
+
+print(reverse(str))
+
+
+# solution3: ???
+backward = lambda str: str[-1] + backward(str[:-1]) if str else str
+
+print(backward)
