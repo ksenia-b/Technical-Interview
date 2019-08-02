@@ -25,3 +25,13 @@ def deliver_presents_recursively(houses):
         # Divides his work among two elves
         deliver_presents_recursively(first_half)
         deliver_presents_recursively(second_half)
+
+
+# sample 3
+def factorial(n):
+     f=1
+     while n>0:
+              f*=n
+              n-=1
+     print(f)
+factorial(4)
