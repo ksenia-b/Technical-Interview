@@ -1,3 +1,14 @@
+# recursion
+# sample 0:
+
+# def rec(x):
+#     print(x)
+#     rec(x + 1)
+#
+# rec(1)
+
+
+# sample 1:
 def factorial(n):
     res = 1
     for i in range(1, n + 1):
@@ -28,10 +39,39 @@ def deliver_presents_recursively(houses):
 
 
 # sample 3
-def factorial(n):
-     f=1
-     while n>0:
-              f*=n
-              n-=1
-     print(f)
-factorial(4)
+import sys
+sys.setrecursionlimit(1000)
+
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n - 1)
+
+
+print("factorial = ", fact(100))
+# print(fact(5))
+
+
+# sample 4, recursion in the list
+def sum(list):
+    sum = 0
+
+    # Add every number in the list.
+    for i in range(0, len(list)):
+        sum = sum + list[i]
+
+    # Return the sum.
+    return sum
+
+
+print(sum([5, 7, 3, 8, 10]))
+
+# sample 4, recursively
+def sum(list):
+    if len(list) == 1:
+        return list[0]
+    else:
+        return list[0] + sum(list[1:])
+
+print(sum([5,7,3,8,10]))
