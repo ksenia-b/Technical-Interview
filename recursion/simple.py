@@ -91,22 +91,22 @@
 #     if x == 1:
 #         return 1
 #     return fact(x - 1) * x
-
-
+#
+#
 # print(fact(4))
 
 
-# fibonacci
+#fibonacci
 def fib(n):
     if n == 1:
         return 0
     if n == 2:
         return 1
-    print(" 1 = ", fib(n - 1))
-    print(" 2 = ", fib(n - 2))
+    #print( n)
+    # print(" 2 = ", fib(n - 2))
 
     return fib(n - 1) + fib(n - 2)
 
-fib(5)
+print(fib(11))
 
 
