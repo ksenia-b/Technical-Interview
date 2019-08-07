@@ -96,17 +96,39 @@
 # print(fact(4))
 
 
-#fibonacci
-def fib(n):
-    if n == 1:
-        return 0
-    if n == 2:
-        return 1
-    #print( n)
-    # print(" 2 = ", fib(n - 2))
+# #fibonacci
+# def fib(n):
+#     if n == 1:
+#         return 0
+#     if n == 2:
+#         return 1
+#     #print( n)
+#     # print(" 2 = ", fib(n - 2))
+#
+#     return fib(n - 1) + fib(n - 2)
+#
+# print(fib(11))
 
-    return fib(n - 1) + fib(n - 2)
 
-print(fib(11))
+# # Assume that remaining is a positive integer
+# def hi_recursive(remaining):
+#     # The base case
+#     if remaining == 0:
+#         return
+#     print('hi')
+#
+#     # Call to function, with a reduced remaining count
+#     hi_recursive(remaining - 1)
+#
+# hi_recursive(5)
 
 
+def hi_recursive(remaining):
+    if remaining == 0:
+        return
+    print("hi", remaining)
+    hi_recursive(remaining - 1)
+    print("finished", remaining)
+
+
+hi_recursive(5)
