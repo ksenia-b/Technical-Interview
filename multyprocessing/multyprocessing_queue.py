@@ -32,6 +32,7 @@ def write(q):
         q.put_nowait(v)
         time.sleep(0.2)
 
+
 def read(q):
     while 1:
         if not q.empty():
