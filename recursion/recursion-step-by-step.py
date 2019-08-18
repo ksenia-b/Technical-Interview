@@ -41,3 +41,21 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
+
+# factorial example 2
+# Example of recursion in Python to
+# find the factorial of a given number
+
+def factorial(num):
+    """This function calls itself to find
+    the factorial of a number"""
+
+    if num == 1:
+        return 1
+    else:
+        return (num * factorial(num - 1))
+
+
+num = 5
+print("Factorial of", num, "is: ", factorial(num))
