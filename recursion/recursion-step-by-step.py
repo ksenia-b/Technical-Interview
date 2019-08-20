@@ -59,3 +59,12 @@ def factorial(num):
 
 num = 5
 print("Factorial of", num, "is: ", factorial(num))
+
+
+#
+def sum_recursive(nums):
+    if len(nums) == 0:
+        return 0
+
+    last_num = nums.pop()
+    return last_num + sum_recursive(nums)
