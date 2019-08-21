@@ -68,3 +68,8 @@ def sum_recursive(nums):
 
     last_num = nums.pop()
     return last_num + sum_recursive(nums)
+
+#vdef factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
